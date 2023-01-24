@@ -1,0 +1,104 @@
+#include <iostream>
+using namespace std;
+/* to compile on terminal -- g++ filename.cpp
+   and then .\a on terminal */
+// comment line and /n or endl
+int main()
+{
+    cout << "Hello World!!!" << endl;
+    cout << "Lets get started with coding-- Nithin" << endl;
+
+    short sa = 9;
+    cout << sa << endl;
+    // short sa=9 is variable
+    // camel case notation
+    int marksInMaths = 83;
+    cout << marksInMaths << endl;
+    cout << "marks of student in maths-" << marksInMaths << endl;
+    // variable - short, int, Long, Long Long
+    short a;
+    int b;
+    long c;
+    long long d;
+    // data types float, double, Long double
+    float const score = 83;
+    cout << "the score is " << score << endl;
+    double score2 = 84;
+    long double score3 = 85;
+    cout << "the score of all " << score << score2 << score3 << endl;
+    // score= 80  ;
+    cout << "the score of all " << score << score2 << score3 << endl;
+    // now const
+    // cout<<"the score of all "<<score <<score2 <<score3<< endl;
+
+    // now taking input from user and the operator + - * /
+    int e, f;
+    cout << "the calulator" << endl;
+    cout << "enter the first number" << endl;
+    cin >> e;
+    cout << "enter the second number" << endl;
+    cin >> f;
+    cout << "e + f " << e + f << endl;
+    cout << "e - f " << e - f << endl;
+    cout << "e * f " << e * f << endl;
+    cout << "e / f " << e / f << endl;        /*result integer will not show*/
+    cout << "e / f " << (float)e / f << endl; /* now after adding (float) in result after . answer will show*/
+    // float divide by integer= float ans, int/int = int ans, float any operation with int= float ans, but Int and int = int ans
+
+    // if else else if conditions
+    int age;
+    cout << "enter ur age " << endl;
+    cin >> age;
+    if (age >= 110 || age <= 5)
+    {
+        cout << "invalid" << endl;
+    } // this thing is || and operator
+
+    else if (age >= 18)
+    {
+        cout << "you can vote" << endl;
+    }
+
+    else
+    {
+        cout << "cannot vote" << endl;
+    }
+    // switch, break- breaks the line and statement or if we not put it then will execute all the statement
+    int ageCase;
+    cout << "enter ur agecase" << endl;
+    cin >> ageCase;
+    switch (ageCase)
+    {
+    case 12:
+        cout << "you are 12 years old";
+        break;
+    case 18:
+        cout << "you are 18 years old";
+        break;
+
+    default:
+        cout << "you are neither 12 or 18 years old" << endl;
+        break;
+    }
+    // loops - while  dowhile forloop
+    // while - it keeps on looping unless the condition is acheived
+    int index;
+    cout << "enter the index" << endl;
+    cin >> index;
+    while (index <= 20)
+    {
+        cout << "we are at index number" << index << endl;
+        index = index + 1;
+    }
+    if (index >= 21)
+        cout << "there is only 20 index" << endl;
+
+    // do while loop- it will run atleast one time
+ /* do
+    {
+        cout << "we are at index number test " << index << endl;
+        index = index + 1;
+    } while (index > 21);  */
+
+    return 0;
+}
